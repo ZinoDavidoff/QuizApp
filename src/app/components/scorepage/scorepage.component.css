@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+.customIconSize {
+  font-size: 100px;
+  height: 100px;
+  width: 100px;
+}
+
+.endGameText {
+  font-size: 2rem;
+  text-align: center;
+  margin: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 180%;
+}
+
+.endGameText .mat-icon {
+ text-align: center;
+}

@@ -1,0 +1,24 @@
+<div class="card-wrapper" >
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title class="mat-display-1">Q{{question_number}}</mat-card-title>
+    </mat-card-header>
+    
+    <img fxLayoutAlign="center" fxLayout="column" src="./assets/{{img_url}}" *ngIf="hasImage">
+  
+    <!-- ! The question goes here -->
+    <mat-card-content class="mat-h2">
+      <div>
+       {{question_text}}
+      </div>
+    </mat-card-content>
+
+    <mat-card-actions fxLayout="column" fxLayoutGap="2rem">
+      <button (click)="clickOnOptionA()" mat-raised-button id="firstOption" class="mat-h4 optionColor"
+       >{{OptionA}}</button>
+      <button (click)="clickOnOptionB()" mat-raised-button class="mat-h4 optionColor" >{{OptionB}}</button>
+      <button (click)="clickOnOptionC()" mat-raised-button class="mat-h4 optionColor">{{OptionC}}</button>
+      <button (click)="clickOnOptionD()" mat-raised-button id="lastOption" class="mat-h4 optionColor">{{OptionD}}</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

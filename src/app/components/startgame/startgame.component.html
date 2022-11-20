@@ -1,0 +1,25 @@
+<div class="header-container">
+  <h1 class="mat-display-1" id="header">Welcome to Your Angular Quiz</h1>
+</div>
+ 
+ <app-question-page
+ *ngIf="!quizEnded"
+ question_text={{currentQuestion.questionText}}
+ img_url={{currentQuestion.image}}
+ [hasImage]="currentQuestion.hasImage"
+ [question_number]="idQuestion + 1"
+ 
+ OptionA={{currentQuestion.answerOptions[0].value}}
+ OptionB={{currentQuestion.answerOptions[1].value}}
+ OptionC={{currentQuestion.answerOptions[2].value}}
+ OptionD={{currentQuestion.answerOptions[3].value}}
+ 
+ (listenParentHandlerA)="handleClickOption(currentQuestion.answerOptions[0])"
+ (listenParentHandlerB)="handleClickOption(currentQuestion.answerOptions[1])"
+ (listenParentHandlerC)="handleClickOption(currentQuestion.answerOptions[2])"
+ (listenParentHandlerD)="handleClickOption(currentQuestion.answerOptions[3])">
+</app-question-page>
+ 
+<div *ngIf="quizEnded">
+  <app-scorepage [score]="score"></app-scorepage>
+</div> 

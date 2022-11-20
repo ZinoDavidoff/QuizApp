@@ -1,0 +1,28 @@
+<div class="header-container">
+  <h1 class="mat-display-1" id="header" >
+    Welcome to Your Angular Quiz 
+  </h1>
+</div>
+
+<div class="enter-name-text">Please enter your name and email before starting the quiz</div>
+
+<form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="username" autocomplete="off"/>
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field appearance="fill" style="margin-top: 2rem;">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" autocomplete="off"/>
+    </mat-form-field>
+  </div>
+
+  <div class="button-container">
+    <button mat-raised-button color="primary" [disabled]="!loginForm.valid">Submit</button>
+  </div>
+</form>
+
+<!-- <h4>{{username}}</h4> -->

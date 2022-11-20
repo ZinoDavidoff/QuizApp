@@ -1,0 +1,38 @@
+<ng-container class="endGameText" *ngIf="isPoor" style="text-align: center;">
+  <div class="endGameText"><mat-icon class="customIconSize" style="color: red;">sentiment_very_dissatisfied</mat-icon></div>
+  <h4 class="endGameText">
+    Thanks {{ username }} for taking our Quiz. 
+  </h4>
+  <h2 class="endGameText">
+    Your score is Poor {{ score }}/10.
+  </h2>
+  <div class="endGameText">
+    <button mat-raised-button color="primary" (click)="resetQuiz()">Reset Quiz</button>
+  </div>
+</ng-container>
+
+<ng-container class="endGameText" *ngIf="isAverage">
+  <div class="endGameText"><mat-icon class="customIconSize" style="color: blue;">sentiment_satisfied</mat-icon></div>
+  <h4 class="endGameText">
+    Thanks {{ username }} for taking our Quiz.
+  </h4>
+  <h2 class="endGameText">
+    Your score is Average {{ score }}/10.
+  </h2>
+  <div class="endGameText">
+    <button mat-raised-button color="primary" (click)="resetQuiz()">Reset Quiz</button>
+  </div>
+</ng-container>
+
+<ng-container class="endGameText" *ngIf="isExcellent">
+  <div class="endGameText"><mat-icon class="customIconSize" style="color: green;">sentiment_very_satisfied</mat-icon></div>
+  <h4 class="endGameText">
+    Thanks {{ username }} for taking our Quiz.
+  </h4>
+  <h2 class="endGameText">
+    Your score is Excellent {{ score }}/10.
+  </h2>
+  <div class="endGameText">
+    <button mat-raised-button color="primary" (click)="resetQuiz()">Reset Quiz</button>
+  </div>
+</ng-container>

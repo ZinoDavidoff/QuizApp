@@ -1,0 +1,252 @@
+[
+  {
+    "id": 1,
+    "questionText": "What method is used to wire up a FormControl to a native DOM input element in reactive forms?",
+    "hasImage": false,
+    
+    "answerOptions": [
+      { "value": "Add the string name given to the FormControl to an attribute named controls on the element to indicate what fields it should include.", "isCorrect": false },
+      { "value": "Use the square bracket binding syntax around the value attribute on the DOM element and set that equal to an instance of the FormControl.", "isCorrect": false },
+      { "value": "Use the formControlName directive and set the value equal to the string name given to the FormControl.", "isCorrect": true },
+      { "value": "Use the string name given to the FormControl as the value for the DOM element id attribute.", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 2,
+    "questionText": "What is the RouterModule.forRoot method used for?",
+    "hasImage": false,
+
+    "answerOptions": [
+      { "value": "Registering route definitions at the root application level.", "isCorrect": true },
+      { "value": "Registering any providers that you intend to use in routed components.", "isCorrect": false },
+      { "value": "Indicating that Angular should cheer on your routes to be successful.", "isCorrect": false },
+      { "value": "Declaring that you intend to use routing only at the root level.", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 3,
+    "questionText": "In reactive forms, what Angular form class type is used on the native DOM element to wire it up?",
+    "hasImage": false,
+
+    "answerOptions": [
+      { "value": "FormGroup", "isCorrect": true },
+      { "value": "FormArray", "isCorrect": false },
+      { "value": "FormControl", "isCorrect": false },
+      { "value": "all of these answers", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 4,
+    "questionText": "What is the primary difference between a component and a directive?",
+    "hasImage": false,
+
+    "answerOptions": [
+      { "value": "A directive can target only native DOM elements.", "isCorrect": false },
+      { "value": "A directive can be used for adding custom events to the DOM and a component cannot.", "isCorrect": false },
+      { "value": "A component has a template and a directive does not.", "isCorrect": true },
+      { "value": "A directive can target only native DOM elements.", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 5,
+    "questionText": "What lifecycle hook can be used on a component to monitor all changes to @Input values on that component?",
+    "hasImage": false,
+
+    "answerOptions": [
+      { "value": "ngOnInit", "isCorrect": false },
+      { "value": "ngOnChanges", "isCorrect": true },
+      { "value": "ngAfterInputChange", "isCorrect": false },
+      { "value": "ngChanges", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 6,
+    "questionText": "What is the decorator used for configuring your module class?",
+    "hasImage": false,
+
+    "answerOptions": [
+      { "value": "@NgApp", "isCorrect": false },
+      { "value": "Both", "isCorrect": false },
+      { "value": "@NgModule", "isCorrect": true },
+      { "value": "None of the above", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 7,
+    "questionText": "Which of the following will map the name of an input parameter 'userData' to a field named 'users'?",
+    "hasImage": false,
+
+    "answerOptions": [   
+      { "value": "@Input() userData: users", "isCorrect": false },
+      { "value": "@Input() users: userData", "isCorrect": false },
+      { "value": "@Input('users') userData", "isCorrect": false },
+      { "value": "@Input('userData') users", "isCorrect": true }
+    ]
+  },
+
+  {
+    "id": 8,
+    "questionText": "What are the two component decorator metadata properties used to set up CSS styles for a component?",
+    "hasImage": false,
+
+    "answerOptions": [
+      { "value": "viewEncapsulation and viewEncapsulationFiles.", "isCorrect": false },
+      { "value": "styles and styleUrls.", "isCorrect": true },
+      { "value": "css and cssUrl.", "isCorrect": false },
+      { "value": "There is only one and it is the property named css.", "isCorrect": false }
+    ]
+  },
+
+  {
+    "id": 9,
+    "questionText": "What is the purpose of the valueChanges method on a FormControl?",
+    "hasImage": false,
+
+    "answerOptions": [
+      { "value": "It returns a Boolean based on if the value of the control is different from the value with which it was initialized.", "isCorrect": false },
+      { "value": "It is used to change the value of a control to a new value. You would call that method and pass in the new value for the form field. It even supports passing in an array of values that can be set over time.", "isCorrect": false },
+      { "value": "It is an observable that emits every time the value of the control changes, so you can react to new values and make logic decisions at that time.", "isCorrect": true },
+      { "value": "It is used to configure what values are allowed for the control.", "isCorrect": false }
+    ]
+  },
+  {
+     "id": 10,
+    "questionText": "What are Angular lifecycle hooks?",
+    "hasImage": false,
+
+    "answerOptions": [
+      { "value": "loggers for tracking the health of an Angular app", "isCorrect": false },
+      { "value": "providers that can be used to track the instances of components", "isCorrect": false },
+      { "value": "built-in pipes that can be used in templates for DOM events", "isCorrect": false },
+      { "value": "reserved named methods for components and directives that Angular will call during set times in its execution, and can be used to tap into those lifecycle moments", "isCorrect": true }
+    ]
+  },
+  {
+    "id": 11,
+   "questionText": "What is the purpose of the ViewChild decorator in this component class?",
+   "image": "ViewChild.PNG",
+   "hasImage": true,
+
+   "answerOptions": [
+     { "value": "It provides access from within the component class to the ElementRef object for the <p> tag that has the bio template reference variable in the component's template view.", "isCorrect": true },
+     { "value": "It indicates that the <p> tag be rendered as a child of the parent view that uses this component.", "isCorrect": false },
+     { "value": "It makes the <p> tag in the template support content projection.", "isCorrect": false },
+     { "value": "It makes the <p> tag visible in the final render. If the #bio was used in the template and the @ViewChild was not used in the class, then Angular would automatically hide the <p> tag that has #bio on it.", "isCorrect": false }
+   ]
+ },
+ {
+  "id": 12,
+ "questionText": "How can you use the HttpClient to send a POST request to an endpoint from within an addOrder function in this OrderService?",
+ "image": "HTTP.PNG",
+ "hasImage": true,
+
+ "answerOptions": [
+   { "value": "this.httpClient.url(this.orderUrl).post(order);", "isCorrect": false },
+   { "value": "this.httpClient.send(this.orderUrl, order);", "isCorrect": false },
+   { "value": "this.httpClient.post(this.orderUrl, order);", "isCorrect": false },
+   { "value": "this.httpClient.post(this.orderUrl, order).subscribe();", "isCorrect": true }
+  ]
+ },
+ {
+  "id": 13,
+ "questionText": "What is the difference between these two markup examples for conditionally handling display?",
+ "image": "ngIf.PNG",
+ "hasImage": true,
+
+ "answerOptions": [
+   { "value": "The ngIf is shorthand for the other example. When Angular processes that directive, it writes a div element to the DOM with the hidden property.", "isCorrect": false },
+   { "value": "They are fundamentally the same.", "isCorrect": false },
+   { "value": "The ngIf directive does not render the div in the DOM if the expression is false. The hidden property usage hides the div content in the browser viewport, but the div is still in the DOM.", "isCorrect": true },
+   { "value": "The ngIf is valid, but the use of the hidden property is wrong and will throw an error.", "isCorrect": false }
+  ]
+ },
+ {
+  "id": 14,
+ "questionText": "Based on the following component, what template syntax would you use to bind the TitleCardComponent's titleText field to the h1 element title property?",
+ "image": "StringInterpolation.PNG",
+ "hasImage": true,
+
+ "answerOptions": [
+   { "value": "<h1 data-title='titleText'>{{ titleText }}</h1>", "isCorrect": false },
+   { "value": "<h1 title='titleText'>{{ titleText }}</h1>", "isCorrect": false },
+   { "value": "<h1 [title]='titleText'>{{ titleText }}</h1>", "isCorrect": true },
+   { "value": "<h1 titleText>{{ titleText }}</h1>", "isCorrect": false }
+  ]
+ },
+ {
+  "id": 15,
+ "questionText": "Based on the following component, what template syntax would you use to bind the TitleCardComponent's titleText field to the h1 element title property?",
+ "image": "SafeNavigation.PNG",
+ "hasImage": true,
+
+ "answerOptions": [
+   { "value": "The ? is shorthand for the async pipe. The job value must be an Observable.", "isCorrect": false },
+   { "value": "It is using the safe navigation operator (?) on the job field. If the job field is undefined, the access to the bossName will be ignored and no error will occur.", "isCorrect": true },
+   { "value": "There is an error in the template syntax. The ? is not valid here.", "isCorrect": false },
+   { "value": "It is diplaying the job value if it has one; otherwise it is displaying the bossName.", "isCorrect": false }
+  ]
+ },
+ {
+  "id": 16,
+ "questionText": "How would you configure a route definition for a UserDetailComponent that supports the URL path user/23 (where 23 represents the id of the requested user)?",
+ "hasImage": false,
+
+ "answerOptions": [
+   { "value": "{ path: 'user/:id', component: UserDetailComponent }.", "isCorrect": true },
+   { "value": "{ url: 'user/:id', routedComponent: UserDetailComponent }", "isCorrect": false },
+   { "value": "{ routedPath: 'user/:id', component: UserDetailComponent }", "isCorrect": false },
+   { "value": "{ destination: new UserDetailComponent(), route: 'user/:id' }", "isCorrect": false }
+  ]
+ },
+ {
+  "id": 17,
+ "questionText": "Assuming the DataService has been registered in the providers for the application, which answer best describes what happens based on this component's constructor?",
+ "image": "DependencyInjection.PNG",
+ "hasImage": true,
+
+ "answerOptions": [
+   { "value": "It is declaring that the OrderHistoryComponent will have its own version of a DataService and that it should never use any existing instances. The DataService would need to be instantiated within the class as a private field for this code to be complete and working.", "isCorrect": false },
+   { "value": "When Angular creates a new instance of the OrderHistoryComponent, the injector will provide an instance of a DataService class to the component constructor's first argument. The constructor's dataService parameter will be used to set a private instance field with the same name on the instance.", "isCorrect": true },
+   { "value": "It provides a way to do component testing only; the constructor has no usage in the actual run of the Angular application.", "isCorrect": false },
+   { "value": "It enables the custom element that the component targets to have a custom property named dataService that can be used to bind an existing DataService instance to.", "isCorrect": false }
+  ]
+ },
+ {
+  "id": 18,
+ "questionText": "Describe how the validation is set up and configured in this reactive forms example:",
+ "image": "FormValidation.PNG",
+ "hasImage": true,
+
+ "answerOptions": [
+   { "value": "The FormControl for username is getting configured to exclude three validators from the validators that it is allowed to use.", "isCorrect": false },
+   { "value": "The FormControl for username is getting configured to allow three possible validators to be used: required, maxLength, and a custom one named unique. To enable these validators, a validator directive would need to be put on the form fields in the markup.", "isCorrect": false },
+   { "value": "Validation cannot be set up this way in reactive forms.", "isCorrect": false },
+   { "value": "The FormControl for username is getting configured with three validators: the required and minLength validators that come from Angular, and a custom validator function named unique that checks for the value not equal to the string admin.", "isCorrect": true }
+  ]
+ },
+ {
+  "id": 19,
+ "questionText": "What is the difference between the CanActivate and the CanLoad route guards?",
+ "hasImage": false,
+
+ "answerOptions": [
+   { "value": "CanActivate is used to check access. CanLoad is used to preload data for the route.", "isCorrect": false },
+   { "value": "CanLoad is used at app startup to allow or deny routes to be added to the route table. CanActivate is used to manage access to routes at the time they are requested.", "isCorrect": true },
+   { "value": "CanActivate and CanLoad do the exact same thing.", "isCorrect": false },
+   { "value": "CanLoad prevents an entire NgModule from being delivered and loaded. CanActivate stops routing to a component in that NgModule, but that module is still loaded.", "isCorrect": false }
+  ]
+ },
+ {
+  "id": 20,
+ "questionText": "For the following template-driven forms example, what argument can be passed to the submit method in the click event to submit the data for the form?",
+ "image": "Form.PNG",
+ "hasImage": true,
+
+ "answerOptions": [
+   { "value": "submit(form.value)", "isCorrect": true },
+   { "value": "submit($event)", "isCorrect": false },
+   { "value": "submit(ngForm.value)", "isCorrect": false },
+   { "value": "submit(FirstName, lastName)", "isCorrect": false }
+  ]
+ }
+]
